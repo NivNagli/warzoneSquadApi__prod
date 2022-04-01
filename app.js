@@ -75,6 +75,6 @@ mongoose
     `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@warzonesquadtracker.sakwb.mongodb.net/${process.env.MONGODB_COLLECTION}?retryWrites=true&w=majority`
   )
   .then(result => {
-    app.listen(process.env.PORT || 8080);
+    app.listen(process.env.PORT || 8081);
   })
   .catch(err => console.log(err));
