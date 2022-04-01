@@ -4,7 +4,7 @@
   "description": "general-cod-api",
   "main": "app.js",
   "engines": {
-    "node": "15.12.0",
+    "node": "16.0.0",
     "npm": "7.22.0"
   },
   "scripts": {
