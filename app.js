@@ -38,7 +38,7 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();
 });
-app.use(express.static(path.join(__dirname,'public')));
+
 app.use('/pull', pullRoutes);
 app.use('/extract', extractRoutes);
 app.use('/match', matchRoutes);
