@@ -29,7 +29,7 @@ const accessLogStream = fs.createWriteStream(
 );
 
 app.use(compression());
-app.use(morgan('combined', { stream: accessLogStream }));
+// app.use(morgan('combined', { stream: accessLogStream }));
 
 /* CORS PERMISSION'S */
 app.use((req, res, next) => {
