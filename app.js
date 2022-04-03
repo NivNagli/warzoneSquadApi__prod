@@ -50,21 +50,21 @@ app.use('/squad', squadRoutes);
 
 /* TODO: Until fixing duplicate update bug i'm freezing the update from the cloud server and working on that on the local dev server */
 cron.schedule('*/7 * * * *', () => {
-  console.log(`Warzone profiles update interval execute on: ${new Date()}`);
-  updateExecuter.updateUsersData();
-});
+//   console.log(`Warzone profiles update interval execute on: ${new Date()}`);
+//   updateExecuter.updateUsersData();
+// });
 
-/* Setting the interval and function inside him that update the warzone squads inside the database */
-cron.schedule('*/10 * * * *', () => {
-  console.log(`Warzone squads update interval execute on: ${new Date()}`);
-  updateExecuter.updateSquadsData();
-});
+// /* Setting the interval and function inside him that update the warzone squads inside the database */
+// cron.schedule('*/10 * * * *', () => {
+//   console.log(`Warzone squads update interval execute on: ${new Date()}`);
+//   updateExecuter.updateSquadsData();
+// });
 
-/* Setting the interval and function inside him that update the warzone squads inside the database */
-cron.schedule('0 0 */12 * * *', () => {
-  console.log(`Warzone games cleaner interval execute on: ${new Date()}`);
-  updateExecuter.cleanSavedGames();
-});
+// /* Setting the interval and function inside him that update the warzone squads inside the database */
+// cron.schedule('0 0 */12 * * *', () => {
+//   console.log(`Warzone games cleaner interval execute on: ${new Date()}`);
+//   updateExecuter.cleanSavedGames();
+// });
 
 /* Super 'Catcher' for errors handling */
 // Not all errors will be handled by this middleware there is some methods who will handle the errors by themselves.
