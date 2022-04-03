@@ -49,7 +49,7 @@ app.use('/squad', squadRoutes);
 /* Setting the interval and function inside him that try to update the warzone profiles inside the database */
 
 /* TODO: Until fixing duplicate update bug i'm freezing the update from the cloud server and working on that on the local dev server */
-cron.schedule('*/7 * * * *', () => {
+// cron.schedule('*/7 * * * *', () => {
 //   console.log(`Warzone profiles update interval execute on: ${new Date()}`);
 //   updateExecuter.updateUsersData();
 // });
